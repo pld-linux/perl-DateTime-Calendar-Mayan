@@ -10,8 +10,8 @@ Summary(pl):	DateTime::Calendar::Mayan - kalendarze Majów: D³ugi Kalendarz, Haab
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.0601
 Release:	1
-# as perl itself
-License:	GPL or Artistic
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9ed964ceadee297770be4ef7778e090c
