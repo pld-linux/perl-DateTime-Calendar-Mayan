@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	DateTime
-%define	pnam	Calendar-Mayan
+%define		pdir	DateTime
+%define		pnam	Calendar-Mayan
 Summary:	DateTime::Calendar::Mayan - the Mayan Long Count, Haab, and Tzolkin calendars
 Summary(pl):	DateTime::Calendar::Mayan - kalendarze Majów: D³ugi Kalendarz, Haab oraz Tzolkin
 Name:		perl-DateTime-Calendar-Mayan
