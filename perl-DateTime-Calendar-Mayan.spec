@@ -6,6 +6,7 @@
 %define	pdir	DateTime
 %define	pnam	Calendar-Mayan
 Summary:	DateTime::Calendar::Mayan - The Mayan Long Count, Haab, and Tzolkin calendars
+Summary(pl):	DateTime::Calendar::Mayan - Kalendarze Majów D³ugi Kalendarz, Haab oraz Tzolkin
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.0601
 Release:	1
@@ -24,6 +25,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 An implementation of the Mayan Long Count, Haab, and Tzolkin
 calendars as defined in "Calendrical Calculations The Millennium
 Edition". Supplemented by "Frequently Asked Questions about Calendars".
+
+%description -l pl
+Implementacja kalendarzy Majów, D³ugiego, Haab i Tzolkin tak jak
+opisano je w ""Calendrical Calculations The Millennium Edition",
+wraz z poprawkami wg "Frequently Asked Questions about Calendars".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
