@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	DateTime
 %define	pnam	Calendar-Mayan
-Summary:	DateTime::Calendar::Mayan - The Mayan Long Count, Haab, and Tzolkin calendars
-Summary(pl):	DateTime::Calendar::Mayan - Kalendarze Majów D³ugi Kalendarz, Haab oraz Tzolkin
+Summary:	DateTime::Calendar::Mayan - the Mayan Long Count, Haab, and Tzolkin calendars
+Summary(pl):	DateTime::Calendar::Mayan - kalendarze Majów: D³ugi Kalendarz, Haab oraz Tzolkin
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.0601
 Release:	1
@@ -15,9 +15,9 @@ License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9ed964ceadee297770be4ef7778e090c
+BuildRequires:	perl-DateTime
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-DateTime
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,8 +27,8 @@ calendars as defined in "Calendrical Calculations The Millennium
 Edition". Supplemented by "Frequently Asked Questions about Calendars".
 
 %description -l pl
-Implementacja kalendarzy Majów, D³ugiego, Haab i Tzolkin tak jak
-opisano je w ""Calendrical Calculations The Millennium Edition",
+Implementacja kalendarzy Majów: D³ugiego, Haab i Tzolkin tak jak
+opisano je w "Calendrical Calculations The Millennium Edition",
 wraz z poprawkami wg "Frequently Asked Questions about Calendars".
 
 %prep
@@ -44,6 +44,7 @@ wraz z poprawkami wg "Frequently Asked Questions about Calendars".
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 ./Build install
 
 %clean
