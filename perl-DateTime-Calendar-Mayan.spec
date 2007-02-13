@@ -6,7 +6,7 @@
 %define		pdir	DateTime
 %define		pnam	Calendar-Mayan
 Summary:	DateTime::Calendar::Mayan - the Mayan Long Count, Haab, and Tzolkin calendars
-Summary(pl.UTF-8):   DateTime::Calendar::Mayan - kalendarze Majów: Długi Kalendarz, Haab oraz Tzolkin
+Summary(pl.UTF-8):	DateTime::Calendar::Mayan - kalendarze Majów: Długi Kalendarz, Haab oraz Tzolkin
 Name:		perl-DateTime-Calendar-Mayan
 Version:	0.0601
 Release:	1
