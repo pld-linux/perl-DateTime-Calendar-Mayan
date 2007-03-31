@@ -13,9 +13,11 @@ Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/DateTime/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9ed964ceadee297770be4ef7778e090c
+URL:		http://search.cpan.org/dist/DateTime-Calendar-Mayan/
 BuildRequires:	perl-DateTime
+BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -47,6 +49,8 @@ rm -rf $RPM_BUILD_ROOT
 
 ./Build install
 
+rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/DateTime/Calendar/Mayan.pod
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -54,7 +58,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README Todo
 %{perl_vendorlib}/DateTime/Calendar/Mayan.pm
-# not sure if that should be or should not be included..
-# i rather would like to include it
-#%{perl_vendorlib}/DateTime/Calendar/Mayan.pod
 %{_mandir}/man3/*
