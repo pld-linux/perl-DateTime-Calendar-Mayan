@@ -9,7 +9,7 @@ Summary:	DateTime::Calendar::Mayan - the Mayan Long Count, Haab, and Tzolkin cal
 Summary(pl.UTF-8):	DateTime::Calendar::Mayan - kalendarze Majów: Długi Kalendarz, Haab oraz Tzolkin
 Name:		perl-DateTime-Calendar-Mayan
 Version:	0.0601
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -24,14 +24,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-An implementation of the Mayan Long Count, Haab, and Tzolkin
-calendars as defined in "Calendrical Calculations The Millennium
-Edition". Supplemented by "Frequently Asked Questions about Calendars".
+An implementation of the Mayan Long Count, Haab, and Tzolkin calendars
+as defined in "Calendrical Calculations The Millennium Edition".
+Supplemented by "Frequently Asked Questions about Calendars".
 
 %description -l pl.UTF-8
 Implementacja kalendarzy Majów: Długiego, Haab i Tzolkin tak jak
-opisano je w "Calendrical Calculations The Millennium Edition",
-wraz z poprawkami wg "Frequently Asked Questions about Calendars".
+opisano je w "Calendrical Calculations The Millennium Edition", wraz z
+poprawkami wg "Frequently Asked Questions about Calendars".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -57,5 +57,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README Todo
+%dir %{perl_vendorlib}/DateTime/Calendar
 %{perl_vendorlib}/DateTime/Calendar/Mayan.pm
 %{_mandir}/man3/*
