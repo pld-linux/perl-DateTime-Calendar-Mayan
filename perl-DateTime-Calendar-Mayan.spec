@@ -9,7 +9,7 @@ Summary:	DateTime::Calendar::Mayan - the Mayan Long Count, Haab, and Tzolkin cal
 Summary(pl.UTF-8):	DateTime::Calendar::Mayan - kalendarze Majów: Długi Kalendarz, Haab oraz Tzolkin
 Name:		perl-DateTime-Calendar-Mayan
 Version:	0.0601
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
