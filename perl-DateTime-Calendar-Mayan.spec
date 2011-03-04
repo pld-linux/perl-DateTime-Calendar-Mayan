@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 
 ./Build install
 
-rm -f $RPM_BUILD_ROOT%{perl_vendorlib}/DateTime/Calendar/Mayan.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/DateTime/Calendar/Mayan.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -59,4 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README Todo
 %dir %{perl_vendorlib}/DateTime/Calendar
 %{perl_vendorlib}/DateTime/Calendar/Mayan.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/DateTime::Calendar::Mayan.3pm*
