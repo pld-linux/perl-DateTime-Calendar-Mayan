@@ -1,6 +1,6 @@
 #
 # Conditional build:
-%bcond_without	tests	# do not perform "make test"
+%bcond_without	tests	# unit tests
 #
 %define		pdir	DateTime
 %define		pnam	Calendar-Mayan
@@ -12,13 +12,14 @@ Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/DateTime/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	https://www.cpan.org/modules/by-module/DateTime/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9ed964ceadee297770be4ef7778e090c
-URL:		http://search.cpan.org/dist/DateTime-Calendar-Mayan/
+URL:		http://metacpan.org/dist/DateTime-Calendar-Mayan
 BuildRequires:	perl-DateTime
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
